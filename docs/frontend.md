@@ -36,7 +36,7 @@ The most important tasks exposed are:
 
 ## `yarn start` task
 
-This task serves Bootzooka application on port `3000` on `0.0.0.0` (it is available to all hosts from the same network). Your default browser should open at this location. All requests to the backend will be proxied to port `8080` where it expects the server to be run.
+This task serves Bootzooka application on port `3000` on `0.0.0.0` (it is available to all hosts from the same network). Your default browser should open at this location. All requests to the backend will be proxied to port `8000` where it expects the server to be run.
 
 Hot reload is in place already (provided by the Create React App stack), so every change is automatically compiled (if necessary) and browser is automatically refreshed to apply changes. No need to refresh it by hand.
 

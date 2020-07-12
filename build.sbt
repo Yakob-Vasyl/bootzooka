@@ -62,6 +62,7 @@ val configDependencies = Seq(
 )
 
 val baseDependencies = Seq(
+  "dev.zio" %% "zio" % "1.0.0-RC20",
   "io.monix" %% "monix" % "3.2.1",
   "com.softwaremill.common" %% "tagging" % "2.2.1",
   "com.softwaremill.quicklens" %% "quicklens" % "1.5.0"
@@ -152,7 +153,7 @@ lazy val fatJarSettings = Seq(
 )
 
 lazy val dockerSettings = Seq(
-  dockerExposedPorts := Seq(8080),
+  dockerExposedPorts := Seq(8000),
   dockerBaseImage := "adoptopenjdk:11.0.5_10-jdk-hotspot",
   packageName in Docker := "bootzooka",
   dockerUsername := Some("softwaremill"),

@@ -3,7 +3,7 @@ services:
   bootzooka:
     image: 'softwaremill/bootzooka:latest'
     ports:
-      - '8080:8080'
+      - '8000:8000'
     depends_on:
       - bootzooka-db
     environment:
